@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor u Krzysztofa</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="js-form" class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kantor wymiany euro</legend>
+                <p>
+                    <label>
+                        <span class="form__lableText"> Kurs EUR w kantorze</span>
+                        <input class="js-euroRate" class="form__field" value="4.71" disabled>
+                    </label>
+                </p>
+                <p>
+                    <span class="form__lableText">Kwota EUR</span>
+                    <input class="js-euroValue" class="form__field" required type="number" min="1" step="any">
+                </p>
+                <p>
+                    <button class="form__button">Przelicz</button>
+                </p>
+                <p>Otrzymasz w PLN: <strong class="js-plnValue"></strong></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
